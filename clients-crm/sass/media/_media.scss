@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px) {
+  .table th {
+    padding: 15px;
+  }
+
+  .table td,
+  .table th {
+    max-width: 14rem;
+  }
+
+  .btn-delete {
+    float: none;
+  }
+
+  .btn-edit {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .sort-btn {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .table td,
+  .table th {
+    padding: 10px;
+  }
+
+  .add-time,
+  .edit-time {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-form {
+    max-width: 300px;
+  }
+
+  .table {
+    width: max-content;
+    overflow-x: scroll;
+  }
+
+  .add-time,
+  .edit-time {
+    margin-left: 7px;
+  }
+
+  .btn-edit {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
+  .header-form {
+    display: none;
+  }
+
+  .modal-container {
+    max-width: 300px;
+  }
+
+  .modal-title {
+    margin: 0;
+  }
+
+  .modal-form-inner,
+  .contact-field {
+    padding: 20px 10px;
+  }
+
+  .contact-list {
+    min-width: 90.5px;
+    padding: 5px 5px;
+  }
+
+  .contact-name {
+    padding: 12px 5px 13px;
+  }
+
+  .contact-input {
+    width: 84%;
+    padding: 11px 5px;
+  }
+
+  .contact-delete {
+    padding: 13px 7px 12px;
+  }
+
+  .client-id {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

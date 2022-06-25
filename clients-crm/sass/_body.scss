@@ -1,0 +1,207 @@
+main {
+  .container {
+    padding-bottom: 100px;
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.grey-text {
+  color: var(--color-txt-grey);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+}
+
+.tbody {
+  position: relative;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+.preloader-wrapper {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  z-index: 2;
+
+  @keyframes preloader {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .preloader {
+    overflow: hidden;
+
+    svg {
+      animation: preloader 1s infinite linear;
+    }
+  }
+}
+
+.client-row {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.arrow {
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  margin-top: -2px;
+  transition: transform .3s ease-in-out;
+}
+
+.firm-color-text {
+  color: var(--color-firm);
+}
+
+th button {
+  float: left;
+}
+
+.table td,
+.table th {
+  padding: 22px;
+  max-width: 18rem;
+}
+
+.add-time,
+.edit-time {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.add-client-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 27px;
+  color: var(--color-firm);
+  border: 1px solid var(--color-firm);
+  transition: background-color .3s ease, color .3s ease;
+
+  svg {
+    fill: var(--color-firm);
+    vertical-align: middle;
+    transition: fill .3s ease;
+  }
+
+  .add-client-text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-left: 10px;
+  }
+}
+
+.add-client-btn:hover {
+  color: white;
+  background-color: var(--color-melrose);
+  transition: background-color .3s ease, color .3s ease;
+
+  svg {
+    fill: white;
+    transition: fill .3s ease;
+  }
+}
+
+.contacts-field {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: dense;
+  gap: 7px;
+}
+
+.contact-link {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  svg {
+    fill: var(--color-firm);
+  }
+}
+
+.contact-link:hover {
+  svg {
+    fill: var(--color-firm-dark);
+  }
+
+  .contact-tooltip {
+    top: -50px;
+    left: -89px;
+    min-width: 210px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .2s ease;
+    text-align: center;
+  }
+}
+
+.btn-delete,
+.btn-edit {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-dark);
+  transition: color .3s ease;
+}
+
+.btn-edit {
+  margin-right: 30px;
+}
+
+.btn-delete {
+  float: right;
+}
+
+.btn-delete:hover {
+  color: var(--color-red);
+  transition: color .3s ease;
+}
+
+.btn-edit:hover {
+  color: var(--color-firm);
+  transition: color .3s ease;
+}
+
+.sort-btn.reverse {
+  .arrow {
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out;
+  }
+}
+
+.sort-btn {
+  transition: color .3s ease;
+}
+
+.sort-btn:hover {
+  color: var(--color-dark);
+  transition: color .3s ease;
+}
+
+.btn-disabled {
+  cursor: auto;
+}
